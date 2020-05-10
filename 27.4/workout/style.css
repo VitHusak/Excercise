@@ -1,0 +1,65 @@
+html{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+/* part of color classes */
+.linksColor,
+.readMore,
+a{
+    color: #2baadf;
+    text-decoration: none;
+}
+
+    header{
+        /* border-style: solid;
+        border-color: brown; */
+
+        text-align: center;
+
+    }
+
+    nav{
+        /* border-style: solid;
+        border-color: brown; */
+
+        text-align:center;
+
+    }
+
+    main{
+        /* border-style: solid;
+        border-color: brown; */
+
+        border-left: 8px solid #2baadf;
+        max-width: 70%;
+        margin: 0 auto;
+        padding-left: 2%;
+
+    }
+
+        article{
+            /* border-style: solid;
+            border-color: brown; */
+            border-bottom: #444444 solid;
+        }
+
+            img{
+                max-width: 30%;
+                margin: auto;
+
+            }
+
+            .articleText{
+                max-width: 30%;
+            }
+
+
+
+    footer{
+        /* border-style: solid;
+        border-color: brown; */
+
+        text-align: center;
+
+    }

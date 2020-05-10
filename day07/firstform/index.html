@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php" method="post">
+
+
+
+        <!-- label je spojen s id check box je dobré spojit s hidden, abychom meli info, ikdzž není zmáčknutý -->
+        <label for="Myadmin">label ti zjednodusuje se trefit na tlacitko</label>
+        <input   type="hidden" name="admin" value="0">
+        <input id="Myadmin" type="checkbox" name="admin" value="1">
+
+        
+        <input type="radio" name="binary" value="1" checked >
+        <input type="radio" name="binary" value="0"  >
+
+
+
+        <select name="user_role" id="">
+            <option value="car">car</option>
+            <option value="bus">bus</option>
+            <option value="tram">tram</option>
+
+        </select>
+        
+       
+
+        <!-- volitelne velké okno na text když tam das placholder je videt, kdzž vymažeš text uprostřed -->
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="blbla">Value of text area</textarea>
+
+        <!-- posle to co tam napises
+        value="cccc" predvyplneno "tvrde!!" -->
+        <input type="text" name="user[First name]" placeholder="neco si sem napis" >
+
+        <!-- není videt ale posle informaci -->
+        <input type="hidden" name="foo" value="1">
+
+        <!-- name posílá save -->
+        <input type="submit" value="Save" name="submit"> 
+        <input type="submit" value="Delete" name="submit"> 
+
+
+
+    </form>
+    
+</body>
+
+
+
+</html>

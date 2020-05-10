@@ -1,0 +1,37 @@
+body{
+    border-style: solid;
+    border-color: brown;
+}
+
+hr{
+    border-top: 1px dashed brown;
+}
+
+.h1, .h3 {
+    text-align: center;
+}
+
+ul{
+    /* border-style: solid; */
+
+    width: fit-content;
+    margin: auto;
+}
+
+p{
+    /* border-style: solid; */
+    font-weight: 600;
+
+    width: fit-content;
+    margin-right: ;
+
+}
+
+dl{
+    /* border-style: solid; */
+
+    width: fit-content;
+    margin: auto;
+}
+
+

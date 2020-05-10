@@ -1,0 +1,52 @@
+
+
+@import 'variables.scss';
+
+// style of nav section
+
+
+.nav{
+    // border: $experience_border;
+
+    height: 5vh;
+    background-color: $background_color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    nav{
+        // border: $experience_border;
+
+        height: 4vh;
+        width: 50vw;
+        background-color: rgb(114, 128, 153);
+
+        display: flex;
+        justify-content: space-between;
+
+
+        a {
+            // border: $experience_border;
+
+            text-decoration: none;
+            color: $text_color;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+            &:hover{
+                background-color: rgb(115, 143, 192);
+            }
+
+            p{
+                // border: 2px solid red;
+                width: fit-content;                
+            }
+        }
+    }
+
+}

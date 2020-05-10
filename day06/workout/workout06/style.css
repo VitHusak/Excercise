@@ -1,0 +1,85 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #313638;
+}
+
+*{
+    margin: 0;
+}
+
+
+header{
+    background-color: #313638;
+    color: whitesmoke;
+
+    height: 15vh;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.sidebar{
+    color: whitesmoke;
+    background-color: #F06543;
+
+    width: 15vw;
+
+    font-size: 3rem;
+
+}
+
+.sidebar p, h1, footer p{
+    padding-top: 4vh;
+    padding-bottom: 4vh ;
+    padding-left: 2vw;
+}
+
+
+footer{
+    color: whitesmoke;
+    background-color: #B3B3B3;
+
+    height: 15vh;
+
+    font-size: 3rem;
+}
+
+section{
+    height: 70vh;
+
+    display: flex;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 85vw;
+}
+
+article p{
+    width: 50vw;
+
+    /* border: 2px solid; */
+}
+
+article p:last-child{
+    margin-bottom: 10vh;
+}
+
+h2{
+    border-bottom: 0.3rem solid #B3B3B3;
+
+    font-size: 3rem;
+
+    width: 50vw;
+
+}
+

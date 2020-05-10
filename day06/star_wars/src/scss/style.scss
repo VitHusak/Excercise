@@ -1,0 +1,15 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+* {
+    margin: 0;
+}
+
+
+
+@import 'nav.scss';
+@import 'home.scss';
+@import 'plot.scss';
+@import 'characters.scss';

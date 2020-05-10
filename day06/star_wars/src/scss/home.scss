@@ -1,0 +1,43 @@
+@import 'variables.scss';
+
+
+.Home{
+    border: $experience_border;    
+
+    height: 40vh;
+    width: 100vw;
+
+    background-color: red;
+    background-image: url("/img/welcome.jpg");
+    background-size: cover;
+    background-position: left;
+
+    position: relative;
+
+    div{
+
+        position: absolute;
+
+        right: 10vw;
+        bottom: 10vh;
+
+        
+        h1{
+            color: $text_color;
+            // border: $experience_border;
+
+            width: fit-content;
+
+            font-size: 3em;
+
+
+        }
+        p{
+            color: $text_color;
+            // border: $experience_border;
+
+            width: fit-content;
+            font-size: 2em;
+        }
+    }
+}

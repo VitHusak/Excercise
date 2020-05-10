@@ -1,0 +1,60 @@
+body{
+    background-color: gray;
+}
+
+header{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+
+.center{
+    margin: auto;
+    border-style: solid; 
+    border-color: green;
+    width: 50%;
+    padding-left: 
+
+}
+
+a{
+    color: rgba(255, 245, 253, 0,5);
+    text-decoration: none;
+}
+
+p {
+   border-style: solid; 
+   border-color: green;
+}
+
+section{
+    border-style: solid; 
+    border-color: green;
+}
+
+ol{
+    border-style: solid; 
+    border-color: green;
+
+    width: 20%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    border-style: solid; 
+    border-color: green;
+}
+
+img{
+    opacity: 0.5;
+    width: 50%;
+    margin: auto;
+}

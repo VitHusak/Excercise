@@ -1,0 +1,85 @@
+body{
+    font-family: sans-serif;
+
+    
+
+}
+
+    header{
+        background-color: #515151;
+        text-align: center;
+        color: whitesmoke;
+    }
+        h1{
+/*             
+            border-style: solid;
+            border-color: yellow; */
+            margin: 0 auto;
+            padding-top: 1rem;
+
+        }
+
+        nav{
+            /* border-style: solid;
+            border-color: yellow; */
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        a{
+            text-decoration: none;
+            
+            color: rgb(211, 210, 210)
+        }
+        a:hover{
+            color: rgb(122, 122, 122)
+        }
+
+
+        img{
+            border-style: solid;
+            border-color: yellow;
+    
+            display: inline-block;
+            box-sizing: border-box;
+            vertical-align: middle;
+
+            height: 40rem;
+            
+
+        }
+
+    article{
+        border-style: solid;
+        border-color: yellow;
+
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: middle;
+
+    }
+
+    section{
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: middle;
+
+    }
+
+        button{
+            background-color: #f88e37;
+            color: whitesmoke;
+            text-align: center;
+
+            display: block;
+            margin: auto;
+            
+            
+        }
+
+    footer{
+        background-color: #212121;
+        text-align: center;
+        color: whitesmoke;
+
+    }

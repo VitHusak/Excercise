@@ -1,0 +1,40 @@
+.ironman{
+    float: left;
+    width: 200px;
+}
+
+.superman{
+    float: right;
+    width: 200px;
+
+    margin-right: 3em;
+}
+.superman2{
+    float: right;
+    width: 200px;
+
+    margin-right: 3em;
+    border: 2px solid red;
+    clear: right;
+}
+
+
+
+.container{
+    clear: both;
+    margin-top: 2 em;
+    border: 2px solid blue;
+    
+  
+
+
+}
+
+.ironman2{
+
+    width: 200px;
+    border: 2px solid purple;
+    float: left;
+
+
+}

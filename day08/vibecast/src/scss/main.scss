@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import "variables";
+@import "icons";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  // margin: 0;
+}
+
+.sidebar {
+  position: fixed;
+  
+  width: 16rem;
+  height: 100vh;
+  padding: 1rem 2rem;
+
+  background-color: $color-bg-primary;  
+  color: $color-text-sidebar;
+  
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  &__logo {
+    background-image: url('/img/vibecast-logo.svg');
+    background-size: contain;
+    width: 12rem;
+    height: 12rem;
+  }
+
+
+  &__nav{
+
+    // border: 2px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4vh;
+    
+
+    
+    .sidebar__a{
+      text-decoration: none;
+      margin: 0.5em;
+      color: $color-text-sidebar;
+
+
+      &:hover{
+        color: whitesmoke;
+      }
+    }   
+    
+  }
+  
+  &__paragraph{
+    color: white;
+
+    span{
+      color: $color-text-sidebar;
+
+    }
+    &--smaller-font{
+        font-size: 0.7rem;
+        color: $color-text-sidebar;
+        margin: 4vh;
+    }
+  }
+
+  &__button{
+    background-color: $color-btn-primary;
+    border: 0.1em solid $color-btn-primary;
+    border-radius: 0.5em;
+    color: white;
+
+    margin-top: 2vh;
+
+    height: 2em;
+
+
+  }
+
+}
+
+.podcast {
+  margin-left: 16rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.podcast-heading {
+  display: flex;
+  align-items: center;
+  
+  height: 5rem;
+  padding: 1rem 2.5rem;
+  margin-bottom: 5vh;
+  
+  background-color: $color-bg-secondary;
+
+  &__logo {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    margin-right: 1rem;
+  }
+
+  &__title {
+    padding-bottom: 0.5rem;
+    
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+
+.episode {
+  display: flex;
+  flex-direction: column;
+  
+  &__item {
+    display: flex;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+    
+    align-items: center;
+
+    &--line {
+      border-top: 2px solid $color-text-tertiary;
+      padding-top: 3vh;
+    }
+  }
+
+
+  &__img {
+    width: 6vw;    
+    align-self: center;
+
+  }
+
+  &__number {
+    color: $color-text-tertiary;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin: 0 1vw;
+
+  }
+
+  &__paragraph {
+    font-size: 1.7em;   
+  }
+
+
+  &__calendar {
+    margin-right: 0.5em;
+    color: $color-text-tertiary;
+
+  }
+
+  &__datum {
+    color: $color-text-tertiary;
+    margin-right: 2em;
+
+
+  }
+
+  &__clock {
+    color: $color-text-tertiary;
+    margin-right: 0.5em;
+
+  }
+
+  &__time {
+    color: $color-text-tertiary;
+
+  }
+
+}
+
+

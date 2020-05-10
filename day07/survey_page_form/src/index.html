@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1>Feedback Form</h1>
+
+    <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php" method="POST">
+
+        <label for="name">
+            NAME
+            <input type="text" id="name" name="name" placeholder="First Name Last Name" required>
+        </label>
+
+        <label for="email">
+            EMAIL
+            <input type="email" id="email" name="email" placeholder="blabla@gmail.com" required>
+        </label>
+
+        <label for="batch">
+            CHOOSE BATCH
+            <select id="batch" name="batch">    
+                <option value="Winter 2020">  Winter 2020</option>
+                <option value="Spring 2020">  Spring 2020</option>
+                <option value="Autumn 2020">  Autumn 2020</option>
+            </select>
+        </label>
+
+
+
+        
+
+        <label>
+            DID YOU COMPLETE ALL EXERCISES FROM WEEK 1?
+            
+            <label for="yesradio">
+                <input type="radio" id="yesradio" name="finished" value="1" checked>                
+                YES
+            </label>
+
+            
+            <label for="noradio">
+                <input type="radio" id="noradio" name="finished" value="0">
+                NO
+            </label>   
+
+        </label>
+
+
+        <label>
+            CHOOSE YOUR FAVOURITE EXCERCISES
+
+            <label for="selectors">
+                <input type="hidden"   name="selectors" value="0">
+                <input id="selectors" type="checkbox" name="selectors" value="1">
+                CSS selectors
+                
+            </label>
+
+            <label for="book">
+                <input type="hidden"   name="book" value="0">
+                <input id="book" type="checkbox" name="book" value="1" >
+                Book page
+            </label>
+
+            <label for="kindergarden">
+                <input type="hidden"   name="kindergarden" value="0">
+                <input id="kindergarden" type="checkbox" name="kindergarden" value="1" >
+                Belfast International kindergarden
+            </label>
+
+            <label for="crownsnest">
+                <input type="hidden"   name="crownsnest" value="0">
+                <input id="crownsnest" type="checkbox" name="crownsnest" value="1">
+                Crownsnest Retreat
+            </label>
+
+            <label for="google">
+                <input type="hidden"   name="google" value="0">
+                <input id="google" type="checkbox" name="google" value="1">
+                Google page
+            </label>
+
+            <label for="documentation">
+                <input type="hidden"   name="documentation" value="0">
+                <input id="documentation" type="checkbox" name="documentation" value="1">
+                Documentation page
+            </label>
+
+            <label for="portfolio">
+                <input type="hidden"   name="portfolio" value="0">
+                <input id="portfolio" type="checkbox" name="portfolio" value="1">
+                Aneta Webie Personal Portfolio  
+            </label>
+        </label>
+
+
+        <label for="feedback">
+            WRITE FEEDBACK
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="It was the best week in my live!"></textarea>
+        </label>
+
+        <input type="submit" name="submit" value="submited">
+
+
+    </form>
+
+</body>
+
+</html>

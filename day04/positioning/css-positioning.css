@@ -1,0 +1,24 @@
+html {
+    background: transparent url('background-grid.png') left top repeat scroll;
+}
+
+body{
+    margin: 0;
+    width: 50%;
+    }
+
+.one{
+    border: 1px solid blue;
+    height: 100px;
+    width: 50%;
+    background-image: url('background-image.jpg');
+    background-size: contain;
+    background-repeat: no-repeat ;
+    /* background-attachment: fixed;  */
+
+    background-position: center;
+}
+
+div{
+   
+}
