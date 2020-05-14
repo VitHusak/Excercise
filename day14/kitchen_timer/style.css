@@ -8,10 +8,15 @@
   border: 2px solid green;
 }
 
-label {
-  display: block;
-}
 
 button {
   display: block;
+  width: 412px;
+  height: 50px;
+  margin-top: 20px;
+
+  font-size: 20px;
+
+
+  background-color: rgba(0, 128, 0, 0.486);
 }
