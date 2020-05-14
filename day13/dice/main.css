@@ -1,0 +1,95 @@
+* {
+  font-size: 18px;
+  font-family: fantasy;
+  margin: 0;
+  padding: 0;
+}
+
+.roll-section {
+  width: 80vw;
+  height: 50vh;  
+  margin: 25vh 10vw;
+
+  /* border: 2px solid; */
+}
+
+.roll-section__h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.roll-section__button {
+  height: 5vh;
+  width: 10vw;
+  display: block;
+
+  margin: 5vh auto;
+}
+
+.roll-section__dice1 {
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+
+  background-image: url(img/side1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.roll-section__dice2 {
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+
+  background-image: url(img/side2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.roll-section__dice3 {
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+
+  background-image: url(img/side3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.roll-section__dice4 {
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+
+  background-image: url(img/side4.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.roll-section__dice5 {
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+
+  background-image: url(img/side5.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.roll-section__dice6 {
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+
+  background-image: url(img/side6.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolling dice</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+  <h1 class="h1">ROLL OF THE DICE!</h1>
+  <p class="rules">Every time when you roll number 6 you get 6 times more than you bet.
+  </p>
+
+  <div class="container">
+
+
+    <section class="bet-section">
+      <div class="bet-section__item">
+        <label for="bet">What is your bet now?</label>
+        <input id="bet" type="text">
+        <button class="bet-section__button" onclick="takeBet()">REALY?</button>
+      </div>
+
+      <div class="bet-section__item">
+        <div>WALLET</div>
+        <div class="bet-section__wallet-amount">60</div>
+      </div>  
+    </section>  
+
+
+    <section class="roll-section">
+      <button class="roll-section__button" onclick="roll()">ROLL</button>
+      <div id="dice" class="roll-section__dice1"></div>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

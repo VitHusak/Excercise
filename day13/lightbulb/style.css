@@ -1,0 +1,19 @@
+.bulb-container {
+    width: 300px;
+    height: 300px;
+
+    background-image: url(bulb-off.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.on {
+    width: 300px;
+    height: 300px;
+
+    background-image: url(bulb-on.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

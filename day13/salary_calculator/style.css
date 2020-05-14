@@ -1,0 +1,64 @@
+body{
+ font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 100vh;
+
+    margin: auto;
+
+    background-color: rgb(222, 255, 244);
+}
+
+label {
+    /* border: 2px solid red; */
+
+    margin-top: 3em;
+}
+
+label, input {
+    width: 60%;
+    border-radius: 0.3rem;
+    height: 2rem;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    margin-top: 3em;
+}
+
+.result {
+    height: 5rem;
+    width: 60%;
+
+    color: beige;
+    font-weight: 900;
+    font-size: 20px;
+
+    background-color: rgb(50, 110, 88);
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+button {
+    height: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    font-size: 18px;
+}
