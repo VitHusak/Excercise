@@ -1,4 +1,4 @@
-.input {
+.box {
   width: 200px;
   height: 200px;
 
@@ -7,15 +7,9 @@
 
   border: 2px solid green;
 }
-.output {
-  width: 200px;
-  height: 200px;
 
-  font-size: 40px;
-  text-align: center;
-
-
-  border: 2px solid green;
+label {
+  display: block;
 }
 
 button {
