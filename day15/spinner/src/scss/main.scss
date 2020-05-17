@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 20px;
+}
+
+.pic-container {
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+  background-color: rgb(88, 105, 167);
+
+  &--background-img {
+    background-image: url('/img/typewriter.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__spinner {
+    width: 70px;
+    height: 70px;
+
+    background-image: url(/img/spinner.png);
+    background-size: contain;
+
+    animation: rotation 1.5s infinite;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  @keyframes rotation {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(360deg);}
+  }
+}
+
+
+
+

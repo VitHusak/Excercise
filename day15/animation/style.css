@@ -1,0 +1,24 @@
+.box {
+  width: 240px;
+  height: 240px;
+
+  background-color: orange;
+  transition: 2s;
+
+  animation: translate 2s infinite alternate;
+  
+}
+
+
+.on {
+  background-color: lightgreen;
+
+  transition: 2s;
+}
+
+
+@keyframes translate{
+  0% { }
+  100% {transform: translate( 100px, 200px)
+        rotate(30deg)}
+}
