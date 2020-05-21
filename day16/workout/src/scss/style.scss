@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  display: flex;
+}
+
+.nav {
+  background-color: royalblue;
+  height: 100vh;
+
+  
+  &--small {
+
+  }
+
+  &--big {
+    width: 25vw;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__h2 {
+    color: white;
+
+    margin-right: 5vw;
+    
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2vh auto;
+    text-align: center;
+
+    // border: 2px solid;
+  }
+
+  &__a {
+    text-decoration: none;
+    color: white;
+    margin: 1vh;
+    font-size: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+}
+

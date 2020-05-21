@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+body {
+  font-size: 25px;
+}
+
+
+
+.container {
+border: 2px solid;
+border-radius: 0.5em;
+
+width: 50vw;
+height: 50vh;
+margin: 5rem auto;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.container__box {
+/* border: 2px solid; */
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+height: 15vh;
+}
+
+.container__year {
+  outline: none;
+  height: 5vh;
+  border-radius: 0.5em;
+  border: 2px solid;
+
+  text-align: center;
+}
+
+.container__btn {
+  outline: none;
+  
+
+  height: 15vh;
+  width: 20vw;
+
+  border-radius: 0.5em;
+  font-size: 1.5rem;
+
+}
+
+.message-box {
+  width: 40vw;
+  height: 15vh;
+
+  /* border: 2px solid; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  /* border: 2px solid; */
+
+  height: 3rem;
+  margin: 1rem 2rem;
+
+}

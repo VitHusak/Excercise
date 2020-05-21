@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 5vh 0;
+}
+
+.chat {
+  border: 2px solid;
+  background-color: gray;
+
+  width: 60vw;
+  height: 80vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    background-color: whitesmoke;
+  
+    width: 35vw;
+    height: 75vh;
+
+    border-radius: 1rem;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__side {
+    // border: 2px solid;
+
+    display: flex;
+
+    width: 90%;
+    margin: 4% auto;
+
+    &--local {
+      flex-direction: row-reverse;
+    }
+
+    &--remote {
+      flex-direction: row;
+    }
+
+  }
+
+  &__userpic {
+    // border: 2px solid;
+
+    width: 60px;
+    height: 60px;
+
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+
+    &--cleverbot {
+    background-image: url('/img/cleverbot.png');
+      
+    }
+
+    &--unicorn {
+      background-image: url('/img/unicorn.png');
+
+    }
+
+  }
+
+  &__message {
+    // border: 2px solid;
+    width: 70%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+
+
+    &--local {
+      background-color: rgba(53, 102, 158, 0.596);
+      justify-content: flex-end;
+    }
+
+    &--remote {
+      background-color: rgba(201, 43, 74, 0.507);
+    }
+  }
+}
