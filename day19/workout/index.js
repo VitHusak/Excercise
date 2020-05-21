@@ -1,29 +1,74 @@
 'use strict';
-const starsElm = document.querySelectorAll('.rating__star');
-const numberElm = document.querySelector('.rating__value');
 
-let clickedStarIndex = 3;
+class Rating {
+  constructor (indexStartStar, maxStars) {
+    this.indexStartStar = indexStartStar;
+    this.maxStars = maxStars;
+  };
 
-starsElm.forEach((star, index) => {
+  render() {
+    const ratingElm = document.createElement('div');
+    ratingElm.className = 'rating';
+    ratingElm.innerHTML = `
+    <div class="rating__value">${this.indexStartStar + 1}</div>
+    <div class="rating__stars"></div>
+    `;
 
-  star.addEventListener('click', ()=> {
-    clickedStarIndex = index;
-    numberElm.textContent = `${clickedStarIndex + 1}`;
-    // console.log(clickedStarIndex);
-    // console.log(index);
+    return ratingElm;
+  };
 
-    light();
-  } )
-})
+  moumt(parent) {
+    this.element = this.render();
+    parent.appendChild(this.element);
+    this.update();
+    this.light();
+  };
+
+  update() {
+    const ratingStarsElm = this.element.querySelector('.rating__stars');
+
+    for(let i = 0; i < this.maxStars; i++) {
+      ratingStarsElm.innerHTML += '<div class="rating__star"></div>';
+    };
+
+    const starsElm = this.element.querySelectorAll('.rating__star');
+    
+    starsElm.forEach((star, index) => { 
+      const numberElm = this.element.querySelector('.rating__value');
+      star.addEventListener('click', ()=> {
+        this.indexStartStar = index;
+        numberElm.textContent = `${this.indexStartStar + 1}`;
+        this.light();
+      })
+    });
+
+  };
 
 
+  light() {
+    const starsElm = this.element.querySelectorAll('.rating__star');
 
-const light = () => {
-  starsElm.forEach((star, index) => {
-    if(clickedStarIndex >= index){
-      star.className = 'rating__star rating__star--on';
-    } else {
-      star.className = 'rating__star ';
-    }
-  })
-}
+    starsElm.forEach((star, index) => {
+      if(this.indexStartStar >= index){
+        star.className = 'rating__star rating__star--on';
+      } else {
+        star.className = 'rating__star ';
+      }
+    })
+
+  };
+  
+};
+
+
+const appElm = document.querySelector('#app');
+const rating1 = new Rating(2, 5);
+rating1.moumt(app);
+
+
+const rating2 = new Rating(3, 6);
+rating2.moumt(app);
+
+const rating3 = new Rating(7, 10);
+rating3.moumt(app);
+

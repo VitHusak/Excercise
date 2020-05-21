@@ -49,3 +49,11 @@ body {
   height: 64px;
   background-color: rgb(255, 82, 0);
 }
+
+.btn-color {
+  display: block;
+  margin: 50px auto;
+
+  height: 40px;
+  width: 300px;
+}
