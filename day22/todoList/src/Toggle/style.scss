@@ -1,0 +1,17 @@
+.toggle {
+  border: 2px solid;
+  width: 30px;
+  height: 30px;
+
+  background-size: contain;
+  
+  &--bg0 {
+    background-image: url('./img/question.svg');    
+  }
+  &--bg1 {
+    background-image: url('./img/cross.svg');    
+  }
+  &--bg2 {
+    background-image: url('./img/check.svg');    
+  }
+}

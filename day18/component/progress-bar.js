@@ -24,15 +24,27 @@ class ProgressBar {
       </div>
     `;
 
+    let timer1Id = null;
     const btnPlus = barElement.querySelector('#plus');
-    btnPlus.addEventListener('click', () => {
-      this.increase();
+    btnPlus.addEventListener('mousedown', () => {
+      timer1Id = setInterval(() => this.increase(), 5);
     });
 
-    const minusPlus = barElement.querySelector('#minus');
-    minusPlus.addEventListener('click', () => {
-      this.decrease();
+    btnPlus.addEventListener('mouseup', () => {
+      clearInterval(timer1Id);
     });
+    
+
+    let timer2Id = null;
+    const minusPlus = barElement.querySelector('#minus');
+    minusPlus.addEventListener('mousedown', () => {
+      timer2Id = setInterval(() => this.decrease(), 5);
+    });
+
+    minusPlus.addEventListener('mouseup', () => {
+      clearInterval(timer2Id);
+    });
+
 
     return barElement;
   }

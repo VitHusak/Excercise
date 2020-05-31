@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+  border: 2px solid;
+  max-width: 50vw;
+}
+
+
+.todo {
+  border: 2px solid green;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    color: red;
+  }
+
+}
+
